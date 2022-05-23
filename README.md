@@ -1,4 +1,4 @@
-**moira fox** is simplified version of deafult theme 
+**moira fox** is simplified version of deafult firefox theme 
 
 later on I will make my code more readable :)
 
