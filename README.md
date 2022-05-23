@@ -28,6 +28,6 @@ can't install theme?
 find somewhere else tutorial (later I will add one, so don't worry)
 
 **contents:**
-(user content)[userContent.css]
+[user content](userContent.css)
 - custom wallpaper
 - hidden scrollbar
