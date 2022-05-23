@@ -1,4 +1,4 @@
-**moira fox** is simplified version of deafult firefox theme 
+**moira fox** is simplified version of deafult firefox theme
 
 later on I will make my code more readable :)
 
@@ -14,17 +14,17 @@ later on I will make my code more readable :)
 
 **additional settings (hiding):**
 - Back button
-- Forward button 
-- "Shield" icon 
-- Site information button 
-- This is the "Search with" indicator on the urlbar 
+- Forward button
+- "Shield" icon
+- Site information button
+- This is the "Search with" indicator on the urlbar
 - Zoom button
-- Page action (right three dash button) 
-- These are the buttons on the right of the urlbar 
+- Page action (right three dash button)
+- These are the buttons on the right of the urlbar
 - Tab close button
-- Enable this to show the tab close button when hovering the tab -> useful when you have many tabs, not recommended when using only icons 
+- Enable this to show the tab close button when hovering the tab -> useful when you have many tabs, not recommended when using only icons
 
-can't install theme? 
+can't install theme?
 find somewhere else tutorial (later I will add one, so don't worry)
 
 **contents:** <br>
