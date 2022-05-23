@@ -26,3 +26,8 @@ later on I will make my code more readable :)
 
 can't install theme? 
 find somewhere else tutorial (later I will add one, so don't worry)
+
+**contents:**
+(user content)[userContent.css]
+- custom wallpaper
+- hidden scrollbar
