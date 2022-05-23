@@ -30,7 +30,7 @@ find somewhere else tutorial (later I will add one, so don't worry)
 **contents:** <br>
 [user content](userContent.css)
 - custom wallpaper
-- hidden scrollbar
+- hidden scrollbar <br>
 [user chrome](userChrome.css)
 - icon only tabs by [MrOtherGuy](https://github.com/MrOtherGuy/firefox-csshacks)
 - some other stuff
