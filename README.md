@@ -27,6 +27,8 @@ later on I will make my code more readable :)
 can't install theme? 
 find somewhere else tutorial (later I will add one, so don't worry)
 
+if you want image as new tab background create folder img and put there your image, then go to [userContent.css](userContent.css)
+
 **contents:** <br>
 [user content](userContent.css)
 - custom wallpaper
