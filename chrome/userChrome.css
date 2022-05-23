@@ -1,4 +1,4 @@
-
+/* MoiraFox theme by cloudmaster */
 
 :root {
   --min-color: #2b808c;
@@ -6,7 +6,7 @@
   --close-color: #F45B69;
 }
 
-/* ICON ONLY TABS by MrOtherGuy*/
+/* ICON ONLY TABS by MrOtherGuy link in readme*/
 .tab-content> :not(.tab-icon-stack) {
   display: none
 }
