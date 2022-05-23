@@ -1,0 +1,178 @@
+:root {
+  --min-color: #2b808c;
+  --max-color: #FCBA04;
+  --close-color: #F45B69;
+}
+
+/* ICON ONLY TABS by MrOtherGuy*/
+.tab-content > :not(.tab-icon-stack){
+  display: none
+}
+.tab-icon-image:not([src]){
+  display: -moz-box !important;
+}
+.tab-icon-stack > *{ margin-inline: 0 !important; }
+.tabbrowser-tab{ -moz-box-flex: 0 !important; }
+
+.tabbrowser-tab[fadein]{ min-width: calc(16px + 2 * 10px + 4px) !important;
+}
+:root[uidensity="compact"] .tabbrowser-tab[fadein]{
+  min-width: calc(16px + 2 * var(--inline-tab-padding,0px) + 4px) !important;
+}
+:root:not([uidensity="compact"]) .tab-content{ padding-inline: 10px !important;
+}
+
+/* FADING TAB EFFECT */
+.tab-background{
+border-radius: 4px !important;
+border: transparent !important;
+}
+.tab-background[selected="true"] {
+  background: linear-gradient(to top, rgb(68, 67, 82, 0.4), rgb(28, 27, 34)) no-repeat !important;
+
+}
+
+/* SMALLER LINES - TABS/ TAB BAR HEIGHT */
+/* don't change, you can just comment it out */
+:root {
+--tab-min-height: 28px !important;
+}
+:root #tabbrowser-tabs {
+--tab-min-height: 28px !important;
+}
+
+/* ANIMATED MIN MAX CLOSE BUTTONS */
+/* general settings */
+.titlebar-button {
+ transition: all 0.3s ease !important;
+ padding: 8px 10px !important;
+}
+.titlebar-button > .toolbarbutton-icon {
+ transition: all 0.3s ease !important;
+ list-style-image: none;
+  border: 1px solid;
+ border-radius: 10px;
+}
+
+/* min button */
+.titlebar-button.titlebar-min > .toolbarbutton-icon {
+ background: var(--min-color) !important;
+  border-color: #2b808c7a !important;
+}
+.titlebar-button.titlebar-min:hover > .toolbarbutton-icon {
+ background: #2b808c38 !important;
+  border: 1px solid;
+  border-color: var(--min-color) !important;
+}
+.titlebar-button.titlebar-min:hover {
+ background: #fdfdfd00 !important;
+}
+
+/* max button */
+.titlebar-button.titlebar-max > .toolbarbutton-icon,
+.titlebar-button.titlebar-restore > .toolbarbutton-icon {
+ background: #FCBA04 !important;
+  border-color: #FCBA047c !important;
+}
+.titlebar-button.titlebar-max:hover > .toolbarbutton-icon,
+.titlebar-button.titlebar-restore:hover > .toolbarbutton-icon {
+ background: #FCBA0444 !important;
+  border: 1px solid;
+  border-color: #FCBA04 !important;
+}
+.titlebar-button.titlebar-max:hover, .titlebar-button.titlebar-restore:hover {
+ background: #fdfdfd00 !important;
+}
+
+/* close button */
+.titlebar-button.titlebar-close > .toolbarbutton-icon {
+ background: #F45B69 !important;
+ stroke: #F45B69 !important;
+  border-color: #F45B6977 !important;
+}
+.titlebar-button.titlebar-close:hover > .toolbarbutton-icon {
+ background: #F45B6942 !important;
+  border: 1px solid;
+  border-color: #F45B69 !important;
+}
+.titlebar-button.titlebar-close:hover {
+ background: #fdfdfd00 !important;
+}
+
+/* BOOKMARK TAB */
+#PersonalToolbar{
+  background: linear-gradient(to top, rgb(28, 27, 34, 0.4), rgb(43, 42, 54)) no-repeat !important;
+}
+toolbarbutton.bookmark-item:hover {
+ font-weight:bold !important;
+}
+
+/* BOOKMARK BAR SHOW ON HOVER */
+#PersonalToolbar{
+--uc-bm-height: 20px; /* Might need to adjust if the toolbar has other buttons */
+--uc-bm-padding: 4px; /* Vertical padding to be applied to bookmarks */
+--uc-autohide-toolbar-delay: 250ms; /* The toolbar is hidden after delaytime */
+
+/* 0deg = "show" ; 90deg = "hide" ;  Set the following to control when bookmarks are shown */
+--uc-autohide-toolbar-focus-rotation: 90deg; /* urlbar is focused */
+--uc-autohide-toolbar-hover-rotation: 0deg; /* cursor is over the toolbar area */
+}
+
+:root[uidensity="compact"] #PersonalToolbar{ --uc-bm-padding: 1px }
+:root[uidensity="touch"] #PersonalToolbar{ --uc-bm-padding: 7px }
+
+#PersonalToolbar:not([customizing]){
+position: relative;
+margin-bottom: calc(0px - var(--uc-bm-height) - 2 * var(--uc-bm-padding));
+transform: rotateX(90deg);
+transform-origin: top;
+transition: transform 135ms linear var(--uc-autohide-toolbar-delay) !important;
+z-index: 1;
+}
+
+#PlacesToolbarItems > .bookmark-item{ padding-block: var(--uc-bm-padding) !important; }
+
+#nav-bar:focus-within + #PersonalToolbar{
+transition-delay: 100ms !important;
+transform: rotateX(var(--uc-autohide-toolbar-focus-rotation,0));
+}
+
+#navigator-toolbox:hover > #PersonalToolbar{
+transition-delay: 100ms !important;
+transform: rotateX(var(--uc-autohide-toolbar-hover-rotation,0));
+}
+
+#navigator-toolbox:hover > #nav-bar:focus-within + #PersonalToolbar {
+transform: rotateX(0);
+}
+
+#navigator-toolbox{
+border-bottom: none !important;
+}
+
+.tab-background {
+border-bottom-left-radius: 0 !important;
+border-bottom-right-radius: 0 !important;
+margin-block: 2px 0 !important;
+}
+
+
+/* OTHER SETTINGS */
+
+/* #back-button { display: none !important } */ /* back button */
+#back-button[disabled="true"] { display: none !important } /* when you can't go back, button disappears */
+
+#forward-button { display: none !important } /* forward button */
+
+/* .tabbrowser-tab:hover .tab-close-button { display: -moz-inline-box !important } */ /* force close button to show while hovering */
+
+/* #tracking-protection-icon-container { display: none !important }*/ /* shield button */
+
+#identity-box { display: none !important } /* site information button */
+
+/* #urlbar-zoom-button { display: none !important } */ /* zoom button */
+
+#page-action-buttons { display: none !important } /* page action button */
+
+
+/* MoiraFox theme by cloudmaster */
