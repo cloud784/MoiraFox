@@ -12,7 +12,8 @@
         position: fixed ;
         top: 0 ;
         left: 0 ;
-        background: #f9a no-repeat url(img/wallpaper.png) center ;
+        /*background: #f9a no-repeat url(wallpaper.png) center ;*/ /* for wallpaper from img folder */
+        background: linear-gradient(130deg, rgba(82,69,245,1) 0%, rgba(117,221,158,1) 100%);;
         background-size: cover ;
         width: 100vw ;
         height: 100vh ;
@@ -30,3 +31,4 @@
     scrollbar-width: none !important;
   }
 }
+
